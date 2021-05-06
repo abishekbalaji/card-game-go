@@ -5,4 +5,7 @@ func main() {
 	cards := newDeckFromFile("cards.txt")
 	cards.shuffle()
 	cards.print()
+	hand, remainingCards := deal(cards, 5)
+	hand.print()
+	remainingCards.print()
 }
